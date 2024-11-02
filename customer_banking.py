@@ -23,9 +23,9 @@ def main():
     # Print out the interest earned and updated savings account balance with 
     # interest earned for the given months.
     print(f"The interest earned in your savings account is: "
-          f"${interest_earned:.2f}")
+          f"${interest_earned:,.2f}")
     print(f"The future savings account balance after "
-          f"{savings_maturity} month(s)is: ${updated_savings_balance:.2f}")
+          f"{savings_maturity} month(s)is: ${updated_savings_balance:,.2f}")
     # Prompt the user to set the CD balance, interest rate, and months for the 
     # CD account.
     cd_balance = float(input("What is your initial CD account balance?: "))
@@ -40,9 +40,9 @@ def main():
     # Print out the interest earned and updated CD account balance with 
     # interest earned for the given months.
     print(f"The interest earned in your savings account is: "
-          f"${cd_interest_earned:.2f}")
+          f"${cd_interest_earned:,.2f}")
     print(f"The future savings account balance after {cd_maturity} is : "
-          f"${updated_cd_balance:.2f}")
+          f"${updated_cd_balance:,.2f}")
 if __name__ == "__main__":
     # Call the main function.
     main()
